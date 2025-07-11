@@ -1,0 +1,140 @@
+/*==================================================================== Preloader */
+
+.preloader {
+    width: 100%;
+    height: 100vh;
+    background: var(--dark-navy);
+    position: fixed;
+}
+
+.preloader svg {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+    pointer-events: none;
+    fill: var(--dark-navy);
+}
+
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+.preloader #leter_1_ {
+    opacity: 0;
+    transform-origin: center;
+    animation: animateOPACL 5s ease-out 1s;
+}
+
+.preloader #poliO_1_ {
+    opacity: 0;
+    transform-origin: center;
+    animation: animatesLine 5s ease-out 1s 1;
+}
+
+.preloader #poli1_1_ {
+    opacity: 0;
+    transform-origin: center;
+    animation: animatesLine 5s ease-out 1s 1;
+}
+
+.preloader #crli1_1_ {
+    opacity: 0;
+    transform-origin: center;
+    animation: animateOPAC 5s ease-out 1s 1;
+}
+
+.preloader #crliO_1_ {
+    opacity: 0;
+    transform-origin: center;
+    animation: animateOPAC 5s ease-out 1s 1;
+}
+
+
+
+@keyframes animatesLine {
+    0% {
+        opacity: 1;
+        stroke-dashoffset: 1000;
+    }
+
+    10% {
+        opacity: 1;
+        stroke-dashoffset: 1000;
+    }
+
+    30% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+
+    40% {
+        transform: rotate(0);
+    }
+
+    80% {
+        transform: rotate(720deg);
+    }
+
+    90% {
+        transform: rotate(720deg);
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        transform: rotate(720deg);
+        opacity: 1;
+        stroke-dashoffset: 0;
+        transform: scale(0);
+    }
+}
+
+@keyframes animateOPACL {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(0);
+    }
+}
+
+@keyframes animateOPAC {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    40% {
+        transform: rotate(0);
+    }
+
+    80% {
+        transform: rotate(720deg);
+    }
+
+    90% {
+        transform: rotate(720deg);
+        transform: scale(1);
+    }
+
+    100% {
+        transform: rotate(720deg);
+        opacity: 1;
+        transform: scale(0);
+    }
+}
