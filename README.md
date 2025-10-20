@@ -1,5 +1,5 @@
 # PERSONAL-V1
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e092d49e-8cfc-4e59-a57c-73b90ac8b3b3/deploy-status)](https://app.netlify.com/projects/tomiandrean/deploys)
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
